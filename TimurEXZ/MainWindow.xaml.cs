@@ -51,7 +51,7 @@ namespace TimurEXZ
         {
             InitializeComponent();
             DataContext = this;
-            Globals.dataProvider = new LocalDataProvider();
+            Globals.dataProvider = new CSVDataProvider("Abiturent.Csv");
             AbiturentList = Globals.dataProvider.GetAbiturents();
             AbitSpecList = Globals.dataProvider.GetAbitSpecs().ToList();
             AbitSpecList.Insert(0, new AbitSpec { Title = "Все специальности" });

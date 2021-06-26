@@ -12,3 +12,4 @@ C:\Users\User\source\repos\TimurEXZ\TimurEXZ\obj\Debug\TimurEXZ.csproj.GenerateR
 C:\Users\User\source\repos\TimurEXZ\TimurEXZ\obj\Debug\TimurEXZ.csproj.CoreCompileInputs.cache
 C:\Users\User\source\repos\TimurEXZ\TimurEXZ\obj\Debug\TimurEXZ.exe
 C:\Users\User\source\repos\TimurEXZ\TimurEXZ\obj\Debug\TimurEXZ.pdb
+C:\Users\User\source\repos\TimurEXZ\TimurEXZ\obj\Debug\TimurEXZ.csproj.AssemblyReference.cache
