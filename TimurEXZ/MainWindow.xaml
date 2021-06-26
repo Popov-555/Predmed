@@ -58,6 +58,23 @@
                 VerticalAlignment="Center"
                 x:Name="SearchFilterTextBox"
                 KeyUp="SearchFilterTextBox_KeyUp"/>
+            <Label
+                Content="Возраст: "
+                VerticalAlignment="Center"/>
+            <RadioButton
+                GroupName="Age"
+                Tag="1"
+                Content="По возрастанию"
+                IsChecked="True"
+                Checked="RadioButton_Checked"
+                VerticalAlignment="Center"/>
+            <RadioButton
+                GroupName="Age"
+                Tag="2"
+                Content="По убыванию"
+                IsChecked="True"
+                Checked="RadioButton_Checked"
+                VerticalAlignment="Center"/>
         </WrapPanel>
         <DataGrid
             Grid.Row="1"

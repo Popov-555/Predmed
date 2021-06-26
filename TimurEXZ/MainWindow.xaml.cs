@@ -36,6 +36,8 @@ namespace TimurEXZ
                    res = res.Where(c =>(SelectedSpec == "Все специальности" || c.Spec == SelectedSpec));
                 if (SearchFilter != "")
                     res = res.Where(c => c.Name.IndexOf(SearchFilter, StringComparison.OrdinalIgnoreCase) >= 0);
+                if (SortAsc) res = res.OrderBy(c => c.Age);
+                else res = res.OrderByDescending(c => c.Age);
                 return res;
             }
             set
@@ -75,6 +77,12 @@ namespace TimurEXZ
         private void SearchFilterTextBox_KeyUp(object sender, KeyEventArgs e)
         {
             SearchFilter = SearchFilterTextBox.Text;
+            Invalidate();
+        }
+        private bool SortAsc = true;
+        private void RadioButton_Checked(object sender, RoutedEventArgs e)
+        {
+            SortAsc = (sender as RadioButton).Tag.ToString() == "1";
             Invalidate();
         }
     }
